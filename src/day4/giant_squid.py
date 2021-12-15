@@ -1,6 +1,5 @@
 from typing import DefaultDict
 
-
 class BingoBoard:
     def __init__(self, number_grid):
         self.grid = number_grid
@@ -64,7 +63,3 @@ def ordered_winners(boards, draw):
 wbs, wds = ordered_winners(boards, draws)
 print("First Winner Result", sum([n for row in wbs[0].grid for n in row if n not in wbs[0].matches])*wds[0])
 print("Last Winner Result", sum([n for row in wbs[-1].grid for n in row if n not in wbs[-1].matches])*wds[-1])
-
-
-
-
