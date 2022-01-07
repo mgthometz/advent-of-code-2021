@@ -90,6 +90,6 @@ def extend_input(input):
 
 extended_input = extend_input(input)
 g2 = Graph(extended_input)
-source = g2.nodes[(0,0)]
-target = g2.nodes[(len(extended_input) - 1,len(extended_input[0]) - 1)]
-print(Dijkstra(g2, (0,0), (len(extended_input) - 1,len(extended_input[0]) - 1)))
+source = g2.nodes[(0, 0)]
+target = g2.nodes[(len(extended_input) - 1, len(extended_input[0]) - 1)]
+print(Dijkstra(g2, (0, 0), (len(extended_input) - 1, len(extended_input[0]) - 1)))
